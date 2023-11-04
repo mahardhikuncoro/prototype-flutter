@@ -18,12 +18,12 @@ void main() async {
 Future<void> initPlatformState() async {
   WidgetsFlutterBinding.ensureInitialized();
   await DBLite().database;
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   //
-  FirebaseConfig.setupCrashlytics();
-  FirebaseConfig.setupRemoteConfig();
+  // FirebaseConfig.setupCrashlytics();
+  // FirebaseConfig.setupRemoteConfig();
 
   // await FirebaseConfig.setupCloudMessaging();
 }
